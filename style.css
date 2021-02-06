@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+::after {
+  color: rgba(42, 38, 38, 0.568)
+}
+
+h1, h2, h3, p {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+i {
+  color: #50c2b8
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right top, rgb(6, 20, 34), #50c2b8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: linear-gradient(to right top,
+  rgba(50, 218, 240, 0.1),
+  rgba(255, 255, 255, 0.4));
+  max-height: 70vh;
+  width: 55vw;  
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+  box-shadow: 6px 10px 10px rgba(0, 174, 255, 0.2);
+  display: flex;
+  border-radius: 2rem;
+}
+
+.circle-1, .circle-2 {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 10rem;
+  position: absolute;
+}
+
+.circle-1 {
+  top: 5vh;
+  right: 15vw;
+  background: linear-gradient(to right top, #83a6c7, #109287);
+}
+
+.circle-2 {
+  bottom: 5vh;
+  left: 15vw;
+  background: linear-gradient(to bottom left, #4a51589b, #10928763);
+}
+
+/* DASHBOARD  */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: linear-gradient(to right top,rgba(54, 40, 40, 0.2), #4a51589b);
+  border-radius: 2rem;
+  padding: 15px;
+  justify-content: space-evenly;
+  font-size: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+/* USER  */
+
+.user {
+  margin-bottom: 15px;
+}
+
+.user img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.user h2 {
+  font-size: 16px;
+}
+
+/* LINKS  */
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.link:hover {
+  background-color: rgba(0, 0, 0, 0.4)
+}
+
+.link img {
+  width: 25px;
+  height: 25px;
+}
+
+.link h3 {
+  margin-left: 10px;
+}
+
+.pro {
+  position: absolute;
+  bottom: -5px;
+  background-color: rgb(101, 200, 216, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  transition: background-color 0.3s
+}
+
+.pro:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pro img {
+  width: 40%;
+}
+
+.pro h3 {
+  width: 60%;
+}
+
+/* CARDS  */
+
+.cards {
+  flex: 3;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ACTIVE GAMES  */
+
+.active-games input {
+  border: none;
+  border-radius: 20px;  
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1))
+}
+
+.active-games {
+  margin: -20px 0px 20px 5px;
+}
+
+/* CARD  */
+
+.card {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  margin: 5px;
+  position: relative;
+  transition: background-color 1s
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card:nth-child(4) {
+  margin-bottom: -25px;
+}
+
+.card-info {
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin: 10px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.percentage {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.progress {
+  position: absolute;
+  background: linear-gradient(to right, rgb(118, 161, 204), #3fdacd);
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  bottom: 5px;
+  left: 23%;
+}
+
+.progress::after {
+  content: "";
+  width: 40%;
+  height: 100%;
+  background-color: rgb(230, 230, 230);
+  position: absolute;
+  left: 90%;
+  overflow: hidden;
+  border-radius: 0 10px 10px 0px;
+}
+
+
+
+/* MEDIA QUERIES  */
+
+
+
+/* MOBILE  */
+
+@media (min-width: 1000px) and (min-height: 2000px) {
+  
+  .glass {
+    height: 100vh;
+    width: 90vw;
+  }
+
+  .card {
+    height: 8vh
+  }
+
+  .card img {
+    height: 8vh;
+    width: 15vw;
+    object-fit: cover;
+    border-radius: 20%;
+  }
+
+  h1, h2, h3, p {
+    font-size: 23px
+  }
+
+  .progress {
+    bottom: 10px;
+    left: 28%;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+  }
+
+
+} 
+
+
+
+
+/* DESKTOPS  */
+
+@media (min-width: 2160px) {
+
+  .circle-1 {
+    top: 15vh
+  }
+
+  .circle-2 {
+    bottom: 15vh
+  }
+
+  .user img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card {
+    height: 150px;
+  }
+
+  .card img {
+    height: 150px;
+    width: 150px;
+  }
+
+  h1, h2, h3, p {
+    font-size: 26px;
+  }
+
+  .glass {
+    height: 50vh
+  }
+
+  .active-games input {
+    margin-top: 10px;
+  }
+
+  .active-games {
+    margin-bottom: -50px
+  }
+
+  .progress {
+    left: 20%;
+    width: 300px;
+  }
+
+  .card {
+    margin-bottom: -30px;
+  }
+
+  .card:nth-child(4) {
+    margin-bottom: 0px
+  }
+
+}
+
+
+@media (max-width: 1920px) {
+  .progress {
+    left: 16%
+  }
+
+  .circle-2 {
+    bottom: 15vh;
+  }
+
+  .circle-1 {
+    top: 15vh;
+  }
+}
+
+@media (max-width: 1600px) {
+  .progress {
+    left: 20%
+  }
+}
+
+@media (max-width: 1600px) {
+  .progress {
+    left: 110px;
+  }
+
+  .card-info {
+    font-size: 10px;
+  }
+
+  .percentage {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .glass {
+    width: 65vw;
+  }
+
+  .circle-1 {
+    top: 10vh;
+    right: 10vw;
+  }
+
+  .circle-2 {
+    bottom: 10vh;
+    left: 10vw;
+    
+  }
+}
+
