@@ -15,4 +15,4 @@ Dev Ed YouTube channel: https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q
 
 Not is fully responsive, only on desktop most used resolutions (1024x768, 1280x720, 1366x768, 1600x900, 1920x1080 and 2160x1440)
 
-![Design Gif](https://github.com/Cauamattosprj/glass-web-design/blob/main/Glass Design.gif?raw=true)
+![Design Gif](https://github.com/Cauamattosprj/glass-web-design/blob/main/Glass%20Design.png)
