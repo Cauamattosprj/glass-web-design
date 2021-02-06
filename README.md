@@ -12,3 +12,5 @@ Dev Ed YouTube channel: https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q
 ----------------------------------------------------------------------------------
 
 ## I used it to learn more about CSS Flex and media queries
+
+Not is fully responsive, only on desktop most used resolutions (1024x768, 1280x720, 1366x768, 1600x900, 1920x1080 and 2160x1440)
