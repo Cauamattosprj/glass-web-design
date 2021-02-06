@@ -9,4 +9,4 @@ Dev Ed GitHub account: https://github.com/developedbyed
 
 Dev Ed YouTube channel: https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q
 ----------------------------------------------------------------------------------
-I used it to learn more about CSS Flex and media queries
+# I used it to learn more about CSS Flex and media queries
