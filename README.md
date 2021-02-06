@@ -8,5 +8,7 @@ Dev Ed GitHub repository: https://github.com/developedbyed/glass-website
 Dev Ed GitHub account: https://github.com/developedbyed
 
 Dev Ed YouTube channel: https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q
+
 ----------------------------------------------------------------------------------
+
 ## I used it to learn more about CSS Flex and media queries
